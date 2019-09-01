@@ -1,0 +1,20 @@
+template header
+name
+price
+
+package com.andresescobar.DroolsDynamicRules;
+
+import com.andresescobar.Book;
+
+template "books"
+
+rule "Set max amount from identifier @{row.rowNumber}"
+when
+	book : Book(name == "@{name}", price != @{price})
+then
+	modify (price) {
+		setPrice(@{price})
+	}
+end
+
+end template
