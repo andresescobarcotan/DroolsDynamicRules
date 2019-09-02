@@ -1,11 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.andresescobar.DroolsDynamicRules.BookTemplateTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.363 sec <<< FAILURE!
-testSimpleBook(com.andresescobar.DroolsDynamicRules.BookTemplateTest)  Time elapsed: 0.325 sec  <<< ERROR!
-java.lang.RuntimeException: The requested KieBase "bookKieBase" does not exist
-	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBaseModelImpl(KieContainerImpl.java:435)
-	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBase(KieContainerImpl.java:369)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.982 sec <<< FAILURE!
+testSimpleBook(com.andresescobar.DroolsDynamicRules.BookTemplateTest)  Time elapsed: 2.964 sec  <<< ERROR!
+java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=bookKieBase, level=ERROR, path=C:\Users\aescobac\Desktop\09-JPBM\Produccion\DroolsDynamicRules\target\classes\BookData.xls, line=4, column=0
+   text=Rule Compilation error price cannot be resolved to a variable
+book cannot be resolved or is not a field]]
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBase(KieContainerImpl.java:377)
 	at com.andresescobar.DroolsDynamicRules.BookTemplateTest.init(BookTemplateTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

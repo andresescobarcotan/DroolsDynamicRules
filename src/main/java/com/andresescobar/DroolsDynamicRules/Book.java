@@ -1,19 +1,19 @@
 package com.andresescobar.DroolsDynamicRules;
 
 public class Book {
-
 	private String name;
-	private Integer price;
+	private double price;
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Integer getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(Integer price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 	

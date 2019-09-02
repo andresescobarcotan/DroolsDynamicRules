@@ -21,16 +21,15 @@ public class BookTemplateTest {
 		kieBase = kieContainer.getKieBase(KIE_BASE);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testSimpleBook() {
 		Book myBook = new Book();
 		myBook.setName("Treasure Island");
 		KieSession kieSession = kieBase.newKieSession();
-		
 		kieSession.insert(myBook);
 		kieSession.fireAllRules();
-		
-		Assert.assertEquals((Integer) 1000, myBook.getPrice());
+		Assert.assertEquals((double) 1000.1, myBook.getPrice(), 0.01);
 		
 	}
 	

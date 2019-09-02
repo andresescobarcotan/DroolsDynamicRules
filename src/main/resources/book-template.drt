@@ -4,15 +4,15 @@ price
 
 package com.andresescobar.DroolsDynamicRules;
 
-import com.andresescobar.Book;
+import com.andresescobar.DroolsDynamicRules.Book;
 
 template "books"
 
-rule "Set max amount from identifier @{row.rowNumber}"
+rule "Set the Price from Book Name @{row.rowNumber}"
 when
 	book : Book(name == "@{name}", price != @{price})
 then
-	modify (price) {
+	modify (book) {
 		setPrice(@{price})
 	}
 end
