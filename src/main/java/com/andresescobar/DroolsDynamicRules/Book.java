@@ -1,9 +1,16 @@
 package com.andresescobar.DroolsDynamicRules;
 
 public class Book {
+	private Integer bookNumber;
 	private String name;
 	private double price;
-	
+
+	public Integer getBookNumber() {
+		return bookNumber;
+	}
+	public void setBookNumber(Integer bookNumber) {
+		this.bookNumber = bookNumber;
+	}
 	public String getName() {
 		return name;
 	}

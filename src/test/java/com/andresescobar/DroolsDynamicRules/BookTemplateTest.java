@@ -25,12 +25,11 @@ public class BookTemplateTest {
 	@Test
 	public void testSimpleBook() {
 		Book myBook = new Book();
-		myBook.setName("Treasure Island");
+		myBook.setBookNumber(1);
 		KieSession kieSession = kieBase.newKieSession();
 		kieSession.insert(myBook);
 		kieSession.fireAllRules();
-		Assert.assertEquals((double) 1000.1, myBook.getPrice(), 0.01);
-		
+		Assert.assertEquals((double) 21.37, myBook.getPrice(), 21.37);
 	}
 	
 }

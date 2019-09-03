@@ -8,13 +8,12 @@ import com.andresescobar.DroolsDynamicRules.Book;
 
 template "books"
 
-rule "Set the Price from Book Name @{row.rowNumber}"
+rule "Set the Book Data @{row.rowNumber}"
 when
-	book : Book(name == "@{name}", price != @{price})
+	book : Book(bookNumber=="@{row.rowNumber}",name != "@{name}", price != @{price})
 then
-	modify (book) {
-		setPrice(@{price})
-	}
+	book.setName("@{name}");
+	book.setPrice(@{price});
 end
 
 end template

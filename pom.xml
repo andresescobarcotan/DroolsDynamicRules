@@ -12,7 +12,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- You will need to have BxMS 6.2 for the dependency below -->
 	<kie.version>7.25.0.Final</kie.version>
 	<slf4j.version>1.7.2</slf4j.version>
 	<junit.version>4.11</junit.version>
@@ -55,5 +54,10 @@
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
 		</dependency>
+		 <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.199</version>
+        </dependency>
   </dependencies>
 </project>
