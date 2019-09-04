@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.andresescobar.DroolsDynamicRules.BookTemplateTest" time="3.317" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="com.andresescobar.DroolsDynamicRules.BookTemplateTest" time="3.18" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\aescobac\Desktop\09-JPBM\Produccion\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4318740958049531420.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\aescobac\Desktop\09-JPBM\Produccion\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4019241950035839543.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\Notepad++;C:\apache-maven-3.5.3\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\scala\bin;C:\apache-ant-1.10.3\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\PuTTY\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Ruby25-x64\bin;C:\Users\aescobac\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\aescobac\AppData\Roaming\npm;C:\Program Files (x86)\CVSNT\;C:\WINDOWS\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.andresescobar.DroolsDynamicRules.BookTemplateTest" name="testSimpleBook" time="3.317">
+  <testcase classname="com.andresescobar.DroolsDynamicRules.BookTemplateTest" name="testSimpleBook" time="3.18">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at org.drools.decisiontable.parser.DefaultRuleSheetListener.flushRule(DefaultRuleSheetListener.java:307)
 	at org.drools.decisiontable.parser.DefaultRuleSheetListener.finishSheet(DefaultRuleSheetListener.java:287)
@@ -114,39 +114,39 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
-    <system-out>13:57:43.878 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/drools/drools-decisiontables/7.25.0.Final/drools-decisiontables-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
-13:57:43.893 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+    <system-out>14:36:01.275 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/drools/drools-decisiontables/7.25.0.Final/drools-decisiontables-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
+14:36:01.291 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
 
-13:57:43.902 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/drools/drools-core/7.25.0.Final/drools-core-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
-13:57:43.908 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+14:36:01.301 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/drools/drools-core/7.25.0.Final/drools-core-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
+14:36:01.306 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
 
-13:57:43.912 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+14:36:01.310 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
 
-13:57:43.916 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+14:36:01.312 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
 
-13:57:43.916 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/kie/kie-internal/7.25.0.Final/kie-internal-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
-13:57:43.922 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieAssemblersImpl
+14:36:01.313 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/kie/kie-internal/7.25.0.Final/kie-internal-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
+14:36:01.318 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieAssemblersImpl
 
-13:57:43.923 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieRuntimesImpl
+14:36:01.319 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieRuntimesImpl
 
-13:57:43.925 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieWeaversImpl
+14:36:01.320 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieWeaversImpl
 
-13:57:43.926 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieBeliefsImpl
+14:36:01.322 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.kie.internal.services.KieBeliefsImpl
 
-13:57:43.927 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/drools/drools-compiler/7.25.0.Final/drools-compiler-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
-13:57:43.940 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+14:36:01.322 [main] DEBUG o.k.a.i.utils.ServiceDiscoveryImpl - Loading kie.conf from  jar:file:/C:/Users/aescobac/.m2/repository/org/drools/drools-compiler/7.25.0.Final/drools-compiler-7.25.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@6bc7c054
+14:36:01.332 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
 
-13:57:43.950 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+14:36:01.339 [main] INFO  o.k.a.i.utils.ServiceDiscoveryImpl - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
 
-13:57:44.439 [main] INFO  o.d.c.k.b.impl.ClasspathKieProject - Found kmodule: file:/C:/Users/aescobac/Desktop/09-JPBM/Produccion/DroolsDynamicRules/target/classes/META-INF/kmodule.xml
-13:57:44.441 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - KieModule URL type=file url=/C:/Users/aescobac/Desktop/09-JPBM/Produccion/DroolsDynamicRules/target/classes
-13:57:44.801 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Found and used pom.properties C:\Users\aescobac\Desktop\09-JPBM\Produccion\DroolsDynamicRules\target\classes\META-INF\maven\com.andresescobar\DroolsDynamicRules\pom.properties
-13:57:44.807 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Discovered classpath module com.andresescobar:DroolsDynamicRules:0.0.1-SNAPSHOT
-13:57:44.813 [main] INFO  o.d.c.k.b.impl.KieRepositoryImpl - KieModule was added: FileKieModule[releaseId=com.andresescobar:DroolsDynamicRules:0.0.1-SNAPSHOT,file=C:\Users\aescobac\Desktop\09-JPBM\Produccion\DroolsDynamicRules\target\classes]
-13:57:46.458 [main] DEBUG org.drools.core.common.DefaultAgenda - State was INACTIVE is now FIRING_ALL_RULES
-13:57:46.519 [main] DEBUG org.drools.core.common.DefaultAgenda - State was FIRING_ALL_RULES is now HALTING
-13:57:46.519 [main] DEBUG org.drools.core.common.DefaultAgenda - State was HALTING is now INACTIVE
-13:57:46.520 [main] DEBUG org.drools.core.common.DefaultAgenda - State was INACTIVE is now DISPOSED
+14:36:01.905 [main] INFO  o.d.c.k.b.impl.ClasspathKieProject - Found kmodule: file:/C:/Users/aescobac/Desktop/09-JPBM/Produccion/DroolsDynamicRules/target/classes/META-INF/kmodule.xml
+14:36:01.907 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - KieModule URL type=file url=/C:/Users/aescobac/Desktop/09-JPBM/Produccion/DroolsDynamicRules/target/classes
+14:36:02.271 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Found and used pom.properties C:\Users\aescobac\Desktop\09-JPBM\Produccion\DroolsDynamicRules\target\classes\META-INF\maven\com.andresescobar\DroolsDynamicRules\pom.properties
+14:36:02.278 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Discovered classpath module com.andresescobar:DroolsDynamicRules:0.0.1-SNAPSHOT
+14:36:02.286 [main] INFO  o.d.c.k.b.impl.KieRepositoryImpl - KieModule was added: FileKieModule[releaseId=com.andresescobar:DroolsDynamicRules:0.0.1-SNAPSHOT,file=C:\Users\aescobac\Desktop\09-JPBM\Produccion\DroolsDynamicRules\target\classes]
+14:36:03.792 [main] DEBUG org.drools.core.common.DefaultAgenda - State was INACTIVE is now FIRING_ALL_RULES
+14:36:03.860 [main] DEBUG org.drools.core.common.DefaultAgenda - State was FIRING_ALL_RULES is now HALTING
+14:36:03.860 [main] DEBUG org.drools.core.common.DefaultAgenda - State was HALTING is now INACTIVE
+14:36:03.861 [main] DEBUG org.drools.core.common.DefaultAgenda - State was INACTIVE is now DISPOSED
 </system-out>
   </testcase>
 </testsuite>

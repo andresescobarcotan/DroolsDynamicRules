@@ -115,7 +115,7 @@ public class DatabaseConnector {
 		 * @return A String with the results found on the database
 		 * @Description Executes a basic statement to fetch all the events that are on the database.
 		 */
-		String results = " Results found on the database : \n";
+		String results = "";
 		if(isConnected) {
 			try {		 
 				String statement = "SELECT * from "+TABLE_NAME;
@@ -146,7 +146,7 @@ public class DatabaseConnector {
 		 * @return A String with the results found on the database in csv format
 		 * @Description Executes a basic statement to fetch all the events that are on the database.
 		 */
-		String results = " Results found on the database : \n";
+		String results = "";
 		if(isConnected) {
 			try {		 
 				String statement = "SELECT * from "+TABLE_NAME;

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.andresescobar.DroolsDynamicRules.BookTemplateTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.318 sec <<< FAILURE!
-testSimpleBook(com.andresescobar.DroolsDynamicRules.BookTemplateTest)  Time elapsed: 3.317 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.187 sec <<< FAILURE!
+testSimpleBook(com.andresescobar.DroolsDynamicRules.BookTemplateTest)  Time elapsed: 3.18 sec  <<< ERROR!
 java.lang.NullPointerException
 	at org.drools.decisiontable.parser.DefaultRuleSheetListener.flushRule(DefaultRuleSheetListener.java:307)
 	at org.drools.decisiontable.parser.DefaultRuleSheetListener.finishSheet(DefaultRuleSheetListener.java:287)
