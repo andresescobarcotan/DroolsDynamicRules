@@ -155,6 +155,11 @@ public class DatabaseConnector {
 				ResultSet resultDatabase = stm.getResultSet();
 				ResultSetMetaData rsmd = resultDatabase.getMetaData();
 				int columnsNumber = rsmd.getColumnCount();
+				for(int i = 1; i <= columnsNumber; i++) {
+					results +=rsmd.getColumnName(i).toLowerCase();
+					if(i < columnsNumber) results += ',';
+				}
+				results += "\n";
 				while(resultDatabase.next()) {
 					for (int i = 1; i <= columnsNumber; i++) {
 				        String columnValue = resultDatabase.getString(i);

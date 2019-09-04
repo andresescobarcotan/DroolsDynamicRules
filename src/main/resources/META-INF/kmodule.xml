@@ -1,7 +1,7 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <kbase name="bookKieBase">
-        <ruleTemplate dtable="BookData.xls"
+        <ruleTemplate dtable="BookData.csv"
                       template="book-template.drt"
-                      row="2" col="1"/>
+                      row="2" col="2"/>
     </kbase>
 </kmodule>
