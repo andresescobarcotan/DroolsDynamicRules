@@ -1,4 +1,4 @@
-package com.andresescobar.DroolsDynamicRules;
+package com.andresescobar.DroolsDynamicRules.model;
 
 public class Book {
 	private Integer bookNumber;

@@ -6,7 +6,12 @@
   <artifactId>DroolsDynamicRules</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
+<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
   <name>DroolsDynamicRules</name>
   <url>http://maven.apache.org</url>
 
@@ -16,6 +21,8 @@
 	<slf4j.version>1.7.2</slf4j.version>
 	<junit.version>4.11</junit.version>
 	<logback.version>1.1.2</logback.version>
+	<java.version>1.8</java.version>
+	<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
   <dependencies>
     <dependency>
@@ -59,5 +66,26 @@
             <artifactId>h2</artifactId>
             <version>1.4.199</version>
         </dependency>
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+	    <groupId>commons-io</groupId>
+    	<artifactId>commons-io</artifactId>
+    	<version>2.6</version>
+	</dependency>
   </dependencies>
 </project>

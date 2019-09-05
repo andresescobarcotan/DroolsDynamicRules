@@ -9,6 +9,8 @@ import java.sql.Statement;
 
 import org.slf4j.LoggerFactory;
 
+import com.andresescobar.DroolsDynamicRules.model.Book;
+
 import ch.qos.logback.classic.Logger;
 
 public class DatabaseConnector {
@@ -140,6 +142,27 @@ public class DatabaseConnector {
 		return results;
 	}
 	
+	
+	public void insertBook(Book newBook) {
+		/*
+		* insertBook
+		* @Description: Inserts the current book instance into the database
+		*/
+		String results = "";
+		if(isConnected) {
+			try {		 
+				String statement = "INSERT INTO "+TABLE_NAME+ "(name, price) VALUES ("+newBook.getName()+","+newBook.getPrice()+")";
+				Statement stm = conn.createStatement();
+				stm.execute(statement);
+				 
+				
+			} catch(Exception e) {
+				LOGGER.error(e.getMessage());
+			}
+		}
+		
+		
+	}
 	public String printCSVFormat() {
 		/**
 		 * printCSVFormat

@@ -8,7 +8,7 @@ import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
-import com.andresescobar.DroolsDynamicRules.Book;
+import com.andresescobar.DroolsDynamicRules.model.Book;
 public class BookTemplateTest {
 	
 	private KieContainer kieContainer;
