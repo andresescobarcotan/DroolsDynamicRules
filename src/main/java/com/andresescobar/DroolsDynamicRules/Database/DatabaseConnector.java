@@ -25,7 +25,9 @@ public class DatabaseConnector {
 	private static boolean isConnected = false; // Indicates if the object is connected to the database or not.
 	private static int ID_POSITION = 1; // Position where the ID column is located in the results.
 	
-	public DatabaseConnector() {
+	
+	
+	private DatabaseConnector() {
 		// TODO Auto-generated constructor stub
 	}
 	
