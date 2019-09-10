@@ -151,7 +151,7 @@ public class DatabaseConnector {
 		String results = "";
 		if(isConnected) {
 			try {		 
-				String statement = "INSERT INTO "+TABLE_NAME+ "(name, price) VALUES ("+newBook.getName()+","+newBook.getPrice()+")";
+				String statement = "INSERT INTO "+TABLE_NAME+ "(name, price) VALUES ('"+newBook.getName()+"',"+newBook.getPrice()+")";
 				Statement stm = conn.createStatement();
 				stm.execute(statement);
 				 
@@ -163,6 +163,30 @@ public class DatabaseConnector {
 		
 		
 	}
+	
+	public int getCurrentBooksNumber() {
+		/*
+		 * @return An integer with the current books number at the table
+		 *  
+		 */
+		int bookNumbers = 0;
+		if(isConnected) {
+			try {		 
+				String statement = "SELECT COUNT(*) from "+TABLE_NAME;
+				Statement stm = conn.createStatement();
+				ResultSet rs = stm.executeQuery(statement);
+				if(rs.next()) {
+					bookNumbers = rs.getInt(1);
+				}
+				
+			} catch(Exception e) {
+				LOGGER.error(e.getMessage());
+			}
+		}
+		
+		return bookNumbers;
+	}
+	
 	public String printCSVFormat() {
 		/**
 		 * printCSVFormat
@@ -197,8 +221,6 @@ public class DatabaseConnector {
 			}
 		}
 		return results;
-
-		
 	}
 
 }
